@@ -1,0 +1,26 @@
+global:
+  datacenter: aznowdc1
+
+ui:
+  service:
+    type: "NodePort"
+
+connectInject:
+  enabled: true
+
+client:
+  enabled: true
+  grpc: true
+
+server:
+  replicas: 3
+  bootstrapExpect: 3
+  disruptionBudget:
+    enabled: true
+    maxUnavailable: 0
+  storage: 5Gi
+  storageClass: managed-premium
+
+syncCatalog:
+  # True if you want to enable the catalog sync. "-" for default.
+  enabled: true

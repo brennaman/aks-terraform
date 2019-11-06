@@ -1,0 +1,3 @@
+# aks-terraform
+Terraform scripts that provision the AKS (Azure Kubernetes Services) infrastructure and k8s cluster configuration.
+....................
